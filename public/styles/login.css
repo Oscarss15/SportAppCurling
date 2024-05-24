@@ -51,7 +51,7 @@ nav {
 }
 
 .hero {
-  background-image: url("/public/assets/hero.png");
+  background-image: url("https://raw.githubusercontent.com/Oscarss15/SportAppCurling/main/public/assets/hero.png");
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -72,7 +72,7 @@ nav {
 }
 
 .background-image {
-  background-image: url("/public/assets/diana.webp");
+  background-image: url("https://raw.githubusercontent.com/Oscarss15/SportAppCurling/main/public/assets/diana.webp");
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +118,7 @@ footer {
   }
 }
 main {
-  background-image: url("/public/assets/diana.webp");
+  background-image: url("https://raw.githubusercontent.com/Oscarss15/SportAppCurling/main/public/assets/diana.webp");
   background-size: cover;
   display: flex;
   justify-content: center;
