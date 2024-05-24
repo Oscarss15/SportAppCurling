@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -66,6 +67,11 @@ nav {
 .description {
   display: flex;
   justify-content: center;
+  flex: 1;
+}
+
+main {
+  flex: 1;
 }
 
 .description__container {
@@ -92,7 +98,7 @@ footer {
   align-items: center;
   min-height: 60px;
   font-size: 20px;
-  flex: 1;
+  height: 60px;
 }
 
 .logos > * {
