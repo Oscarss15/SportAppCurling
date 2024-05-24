@@ -1,515 +1,169 @@
-
-@media screen and (min-width: 1600px) {
-body{
-    font-family: Arial, Helvetica, sans-serif;
-  
-    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 90%, 81%);
+  height: 65px;
 }
-header{
-    width: 100%;
-    height: 150px;
-    background-color: #A3C6FA;
+header .header__wraper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav__container a {
+  background-color: hsl(10, 99%, 57%);
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 65%;
+}
+
+.title__container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.hero {
+  background-image: url("/public/assets/hero.png");
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+}
+
+.description__container {
+  overflow-wrap: break-word;
+  height: 100px;
+  width: 80%;
+  margin: 75px;
+  text-align: center;
+  font-size: 23px;
+}
+
+.background-image {
+  background-image: url("/public/assets/diana.webp");
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+
+footer {
+  background-color: hsl(216, 90%, 81%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  font-size: 20px;
+}
+
+.logos > * {
+  margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 76px;
+  }
+}
+@media (max-width: 600px) {
+  .header__container {
+    width: 80%;
+  }
+  header {
+    height: 100px;
+  }
+  .description__container {
+    font-size: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
     display: flex;
     justify-content: center;
-    align-items: center;
+  }
+  .nav__container {
+    width: 85%;
+  }
+}
+main {
+  background-image: url("/public/assets/diana.webp");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 612px;
+}
+main p {
+  display: none;
+  color: red;
+  font-weight: 900;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  gap: 20px;
+  border: 10px solid hsl(216, 90%, 81%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  height: 450px;
+  width: 450px;
+  background: transperent;
+  backdrop-filter: blur(20px);
+}
+main form > * {
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  width: 300px;
+  border: 4px solid hsl(216, 90%, 81%);
+}
+main form > button {
+  background-color: hsl(216, 90%, 81%);
+  color: white;
+  font-size: 20px;
+  color: black;
+  padding: 10px;
+  width: 200px;
+  border: 3px solid hsl(10, 99%, 57%);
+}
+main form > p {
+  border: none;
 }
 
-#contlogo{
-width: 30%;
-height: 150px;
-
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-#logo{
-  width: 30%;
-  height: 150px;
- display: flex;
-justify-content: center;
-align-items: center;
-} 
-   
-#photologo{
-    height: 120px;
-    }
-#nombreempresa{
-    width: 70%;
-    height: 150px;
-    
-    
-display: flex;
-justify-content: center;
-align-items: center;
-}
-#textempresa{
-    font-size: 30px;
-    color:white;
-    
-
-}
-
-#contmenu{
-width: 55%;
-height: 150px;
-
-
-}
-
-#contlogin{
-width: 15%;
-height: 150px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-
-
-#containerform{
-    width: 25%;
-    height: 500px;
-    background-color: #A3C6FA;
-    border-bottom-left-radius:40px;
-    border-bottom-right-radius:40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-input[type=text],input[type=password]{
-    height: 50px;
-    width: 95%;
-    border-radius: 15px;
-    color:#A09D9D;
-    text-align: center;
-    border: 2px inset #A09D9D;
-     padding: 4px;
-   margin-bottom: 30px;
-     font-size: 30px;
-     background-color: white;
-
-}
-
-input[type=submit]{
-    height: 50px;
-    width: 95%;
-    border-radius: 25px;
-     border: 2px inset #A09D9D;
-     padding: 4px; 
-   
-     font-size: 30px;
-     background-color: #FE4824;
-     color:white;
-    }
-
-    input[type=submit]:hover{
-        height: 50px;
-        width: 95%;
-        border-radius: 25px; 
-         border: 2px inset #A09D9D;
-         padding: 4px;
-         font-size: 30px;
-         background-color: white;
-         color:#FE4824;
-        }
-
-        #mainlogin{
-            height: 700px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-             background-image: url("/public/img/diana2.png");
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        #abtn{
-            text-decoration:none;
-            list-style: none;
-        }
-        #abtn:visited{
-            color: grey;
-        }
-
-        footer{
-            height: 120px;
-            background-color: #A3C6FA;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-        }
-        #contCopyright{
-            width: 70%;
-            height: 120px;
-          
-            
-        }
-        
-        #redessociales{
-            width: 30%;
-            height: 120px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-           
-        }
-        
-        #redsocial1{
-        width: 40px;
-        height: 40px;
-        background-color: white;
-        margin:7%;
-        }
-        
-        #redsocial2{
-            width: 40px;
-            height: 40px;
-            background-color: white;
-            margin:7%;
-        }
-        #redsocial3{
-            width: 40px;
-            height: 40px;
-            background-color: white;
-            margin:7%;
-        }
-        
-        
-        #conttextocopy{
-            width: 15%;
-            height: 120px;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #copy{
-            height: 70px;
-            width:90%;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #copyright{
-            font-size: 30px;
-            font-weight: bold;
-            color: white;
-            
-        
-            
-            }
-        
-          
-            #facebook,#x,#instagram{
-                width: 40px;
-                height: 40px;
-            }
-            #nav{
-                border-top: 3px solid white;
-                width: 100%;
-                background-color: #A3C6FA;
-                height: 80px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color:#A3C6FA;
-                
-            }
-            #btnHome,#btnLogin{
-                margin:10px;
-                height:50px;
-                width: 10%;
-                background-color: white;
-                border-radius: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-            }
-            #btnHome:hover,#btnLogin:hover{
-                margin:10px;
-                height:50px;
-                width: 10%;
-                background-color: #A3C6FA;
-                border-radius: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-                color:white;
-                border:2px solid white;
-            }
-    }
-    @media screen and (max-width: 480px) {
-
-        *{
-            margin:0;
-        }
-        header{
-            width: 100%;
-            background-color: #A3C6FA;
-            height: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-            #contlogo{
-            width: 79%;
-            height: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          
-           
-            }
-            #contmenu{
-            width: 1%;
-            height: 100px;
-            
-            
-            }
-          #contlogin{
-            width: 30%;
-            height: 100px;
-            
-           
-            
-          }
-          #logo{
-            width: 30%;
-            height:100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-           
-          }
-          #nombreempresa{
-            width: 70%;
-            height:100px; 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-           
-          }
-          #photologo{
-            height: 50px;
-          
-          }
-          #textempresa{
-            text-align: center;
-            color:white;
-            
-          }
-          #login{
-            height: 100px;  
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          a{
-            text-decoration:none;
-            list-style: none;
-        }
-        a:visited{
-            color:white;
-        }
-        #nav{
-            width: 100%;
-           
-            height: 60px;
-        }
-        #conttitulotorneo{
-            height: 50px;
-            
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #titulotorneo{
-            text-align: center;
-            font-weight: bold;
-        }
-        main{
-            height: 570px;
-            
-        }
-        footer{
-            height: 90px;
-            background-color: #A3C6FA;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-        }
-        #contCopyright{
-            width: 50%;
-            height: 90px;
-            
-          
-            
-        }
-        
-        #redessociales{
-            width: 50%;
-            height: 90px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        
-           
-        }
-        #redsocial1{
-            width: 30px;
-            height: 30px;
-            background-color: white;
-            margin:7%;
-            }
-            
-            #redsocial2{
-                width: 30px;
-                height: 30px;
-                background-color: white;
-                margin:7%;
-            }
-            #redsocial3{
-                width: 30px;
-                height: 30px;
-                background-color: white;
-                margin:7%;
-            }
-            
-        #facebook,#x,#instagram{
-            width: 30px;
-            height: 30px;
-        }
-      #contCopyright{
-        width: 50%;
-        height: 90px;
-        
-      }
-      #conttextocopy{
-        width: 50%;
-        height: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        
-      }
-
-
-      #containerform{
-        width:65%;
-        height: 300px;
-        background-color: #A3C6FA;
-        border-bottom-left-radius:40px;
-         border-bottom-right-radius:40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-    }
-    input[type=text],input[type=password]{
-       
-        height: 30px;
-       width: 170px;
-        border-radius: 15px;
-        color:#A09D9D;
-        text-align: center;
-        border: 2px inset #A09D9D;
-         padding: 4px;
-       margin-bottom: 30px;
-         font-size: 25px;
-         background-color: white;
-      
-    }
-    
-    input[type=submit]{
-        height: 40px;
-        width: 100%;
-        border-radius: 25px;
-        border: 2px inset #A09D9D;
-        padding: 4px; 
-   
-     font-size: 20px;
-     background-color: #FE4824;
-     color:white;
-        }
-    
-        input[type=submit]:hover{
-            height: 40px;
-            width: 100%;
-            border-radius: 25px; 
-             border: 2px inset #A09D9D;
-             padding: 4px;
-             font-size: 20px;
-             background-color: white;
-             color:#FE4824;
-            }
-    
-            #mainlogin{
-                height: 570px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                 background-image: url("/public/img/diana2.png");
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-            #nav{
-                border-top: 3px solid white;
-                width: 100%;
-                background-color: #A3C6FA;
-                height: 60px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color:#A3C6FA;
-                
-            }
-            #btnHome,#btnLogin{
-                margin:10px;
-                height:30px;
-                width: 30%;
-                background-color: white;
-                border-radius: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-                color:#A3C6FA;
-            }
-            #btnHome:hover,#btnLogin:hover{
-                margin:10px;
-                height:30px;
-                width: 30%;
-                background-color: #A3C6FA;
-                border-radius: 10px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                font-weight: bold;
-                color:white;
-                border:2px solid white;
-            }
-            a{
-                text-decoration:none;
-                list-style: none;
-            }
-            a:visited{
-                color:white;
-            }
-            #abtn:visited{
-                color:grey;
-            }
-    }
+/*# sourceMappingURL=login.css.map */

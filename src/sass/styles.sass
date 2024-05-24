@@ -1,0 +1,93 @@
+$primary-color: hsl(216, 90%, 81%)
+$secondary-color: hsl(10, 99%, 57%)
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    font-family: Arial, Helvetica, sans-serif
+header
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $primary-color
+    height: 65px
+    .header__wraper
+        flex: 1
+        display: flex
+        justify-content: center
+nav
+    display: flex
+    justify-content: center
+    width: 100%
+    // border: 1px solid
+.nav__container
+    display: flex
+    justify-content: space-between
+    // border: 1px solid
+    width: 100%
+    a
+        background-color: $secondary-color
+        padding: 15px 20px
+        border-radius: 5px
+        color: white
+.header__container
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 65%
+    // border: 1px solid
+.title__container
+    display: flex
+    justify-content: center
+    margin: 20px
+    margin-bottom: 40px
+.hero
+    background-image: url("/public/assets/hero.png")
+    height: 250px
+    background-repeat: no-repeat
+    background-size: cover
+    // border: 1px solid black
+.description
+    display: flex
+    justify-content: center
+.description__container
+    overflow-wrap: break-word
+    height: 100px
+    width: 80%
+    margin: 75px
+    // border: 1px solid
+    text-align: center
+    font-size: 23px
+.background-image
+    background-image: url("/public/assets/diana.webp")
+    height: 250px
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: bottom
+footer
+    background-color: $primary-color
+    display: flex
+    justify-content: space-around
+    align-items: center
+    height: 60px
+    font-size: 20px
+.logos > *
+    margin: 0 15px
+@media (max-width: 768px)
+    header
+        height: 76px
+@media (max-width: 600px)
+    .header__container
+        width: 80%
+    header
+        height: 100px
+    .description__container
+        font-size: 20px
+@media (min-width: 1200px)
+    nav
+        display: flex
+        justify-content: center
+        // border: 1px solid
+    .nav__container
+        width: 85%
+    
