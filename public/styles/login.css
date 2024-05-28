@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@200&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
 }
 
 body {
@@ -19,10 +21,10 @@ header {
   background-color: hsl(216, 90%, 81%);
   height: 65px;
 }
-header .header__wraper {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+
+header h2 {
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 nav {
@@ -45,9 +47,9 @@ nav {
 
 .header__container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 65%;
+  width: 90%;
+  gap: 20px;
 }
 
 .title__container {
@@ -68,6 +70,9 @@ nav {
   display: flex;
   justify-content: center;
   flex: 1;
+  color: hsl(10, 99%, 57%);
+  font-weight: 800;
+  text-shadow: 1px 1px 1px hsl(216, 90%, 81%);
 }
 
 main {
@@ -99,6 +104,8 @@ footer {
   min-height: 60px;
   font-size: 20px;
   height: 60px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
 }
 
 .logos > * {
@@ -134,7 +141,8 @@ main {
   background-image: url("https://raw.githubusercontent.com/Oscarss15/SportAppCurling/main/public/assets/diana.webp");
   background-size: cover;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   height: 700px;
 }
@@ -156,6 +164,8 @@ main form {
   border-bottom-right-radius: 25px;
   height: 450px;
   width: 450px;
+  box-shadow: 5px 1px 5px gray;
+  margin-bottom: 75px;
 }
 main form > * {
   padding: 8px;

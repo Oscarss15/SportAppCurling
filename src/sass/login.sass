@@ -1,12 +1,15 @@
 @import styles.sass
 
+
 main
     background-image: url("https://raw.githubusercontent.com/Oscarss15/SportAppCurling/main/public/assets/diana.webp")
     background-size: cover
     display: flex
-    justify-content: center
+    flex-direction: column
+    justify-content: space-between
     align-items: center
     height: 700px
+    // border: 3px solid black
     p
         display: none
         color: red
@@ -24,6 +27,8 @@ main
         border-bottom-right-radius: 25px
         height: 450px
         width: 450px
+        box-shadow: 5px 1px 5px gray
+        margin-bottom: 75px
         // background: transperent
         // backdrop-filter: blur(20px)
     form > *
@@ -43,6 +48,7 @@ main
         border: none
     // position: fixed
     // height: 25px
+
 @media (max-width: 600px)
     main > form
         width: 80%
